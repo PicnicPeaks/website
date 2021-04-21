@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Picnic Peaks - Business Solutions</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="centered">
+    It's time to get to work.
+    <br/><br/>
+    winners@picnicpeaks.com
+    <br/><br/>
+    <small style="color: gray;">Copyright © <span id="copyright-year"></span> Picnic Peaks LLC. All rights
+        reserved.</small>
+</div>
+
+<script>
+    function setCopyrightYear() {
+        var date = new Date();
+        var fullyear = date.getFullYear();
+        document.getElementById("copyright-year").innerHTML = fullyear;
+    }
+
+    setCopyrightYear();
+</script>
+</body>
+</html>
