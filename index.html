@@ -1,55 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Picnic Peaks LLC</title>
+    <title>Picnic Peaks LLC - NetSuite Solutions</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
     <style>
-        body {
-            background-color: aliceblue;
+        .hmb-bg {
+            background-image: url("img/HMB_Coastal_Trail.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        .centered {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            /* bring your own prefixes */
-            transform: translate(-50%, -50%);
-            font-family: sans-serif;
-            text-align: center;
+        .hmb-navy {
+            background-color: rgba(32, 42, 68, 0.9);
+        }
+
+        .testimonial {
+            background-color: lightyellow;
         }
     </style>
 </head>
 <body>
-<div class="centered">
-	<img src="picnic_peaks_logo.png" width="500px">
-	<br/><br/>
-	<br/><br/>
-    Premier Business Solutions &mdash; Licensed and Insured
-    <br/><br/>
-    Systems &bullet; Software &bullet; Cloud Infrastructure &bullet; Integrations
-    <br/><br/>
-    nick@picnicpeaks.com
-    <br/><br/>
-    <nav>
-        <a href="https://www.linkedin.com/in/nicolaskenner/" target="_blank"><small>LinkedIn</small></a> &bullet;
-        <a href="https://twitter.com/picnicpeaks" target="_blank"><small>Twitter</small></a> &bullet;
-        <a href="https://www.instagram.com/picnicpeaks/" target="_blank"><small>Instagram</small></a> &bullet;
-        <a href="https://github.com/PicnicPeaks" target="_blank"><small>GitHub</small></a>
-    </nav>
-    <br/><br/>
-    <small style="color: gray;">Copyright © <span id="copyright-year"></span> Picnic Peaks LLC. All rights
-        reserved.</small>
+<div class="container">
+    <div class="text-center mt-3 border-bottom pb-3">
+        <a href="tel:8015106872"><small>+1 (801) 510-6872</small></a> &bullet;
+        <a href="mailto:nick@picnicpeaks.com"><small>nick@picnicpeaks.com</small></a>
+    </div>
+
+    <div class="mt-4 p-5 mb-5 bg-body-tertiary rounded-3 hmb-bg">
+        <div class="p-5 container-fluid text-center">
+            <div class="row justify-content-center">
+                <div class="col col-md-9 text-center hmb-navy py-5 rounded-2 px-4">
+                    <h1 class="display-5 text-center text-white pb-3 border-bottom">Picnic Peaks LLC</h1>
+
+                    <h1 class="display-5 text-center text-white">NetSuite Solutions</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <h1 class="text-center mb-5 display-5">Services</h1>
+        <div class="col-sm-4 mb-3 mb-sm-0 text-center">
+            <h5>Third-party Integration</h5>
+            <p>Enhance your NetSuite experience by integrating with third-party systems like
+                Shopify, Square, and more.</p>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0 text-center">
+            <h5>Custom SuiteScript</h5>
+            <p>Harness the power of SuiteScript 2.0 to build highly customized processes and
+                automations within your NetSuite environment.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+            <h5>Data Migration</h5>
+            <p>Moving to NetSuite from another system? We can help you move your data to NetSuite. We
+                have experience moving large amounts of data, utilizing the SuiteTalk REST and SOAP APIs.</p>
+        </div>
+    </div>
 </div>
 
-<script>
-    function setCopyrightYear() {
-        var date = new Date();
-        var fullyear = date.getFullYear();
-        document.getElementById("copyright-year").innerHTML = fullyear;
-    }
+<div class="row testimonial text-center justify-content-center py-4">
+    <div class="col-8">
+        <h1 class="display-6 mb-4">Testimonial</h1>
 
-    setCopyrightYear();
-</script>
+        <p>I worked with Nicolas for a short time as a consultant within uLab Systems billing system, and in that time
+            Nicolas was a great employee within the company and a great coworker. I started consulting with Nicolas in
+            May of 2021 and I was inexperienced because I had just graduated from college. Nicolas immediately helped me
+            through the onboarding process to be successful within my role with uLab Systems. He also helped me get
+            integrated with different departments and his title, while I worked there, was a solution architect/systems
+            integration engineer, he did much more than that.</p>
+
+        <p>In the four months I spent working with Nicolas, there wasn't a day that went by where he wasn't able to
+            answer any of my programming questions. Whatever kind of project we were assigned, he would work endlessly
+            to provide uLab Systems with the product they were asking us to build. Nicolas, while working as a solutions
+            architect/systems integration engineer, was spread out throughout the company and was able to provide
+            feedback and support to multiple departments. For instance, Nicolas was able to respond to uLab Systems
+            Salesforce team about an API we were using and how to get it to integrate seamlessly for a database we were
+            working on. This is just one example of Nicolas's many traits while I was working with him. And during that
+            time I was incredibly impressed.</p>
+
+        <p>I could go on commending Nicolas for his role as a consultant with uLab Systems because he made work so much
+            easier and had a great attitude every day. He was consistent within his role, offered guidance, provided
+            quality code, and had immense knowledge of programming. I'm grateful I was able to work with him and I'm
+            even more grateful I can call him a friend.</p>
+
+        <p>- Ian Jackson</p>
+    </div>
+</div>
+
+<div class="container">
+    <footer class="text-center my-5 pt-3 border-top">
+        <small>Picnic Peaks LLC © 2023. All rights reserved.</small>
+    </footer>
+</div>
+
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
