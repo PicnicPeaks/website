@@ -91,10 +91,20 @@
 
 <div class="container">
     <footer class="text-center my-5 pt-3 border-top">
-        <small>Picnic Peaks LLC © 2023. All rights reserved.</small>
+        <small>Picnic Peaks LLC © <span id="copyright-year"></span>. All rights reserved.</small>
     </footer>
 </div>
 
 <script src="js/bootstrap.js"></script>
+
+<script>
+    function setCopyrightYear() {
+        var date = new Date();
+        var fullyear = date.getFullYear();
+        document.getElementById("copyright-year").innerHTML = fullyear;
+    }
+
+    setCopyrightYear();
+</script>
 </body>
 </html>
