@@ -23,6 +23,19 @@
         .testimonial {
             background-color: lightyellow;
         }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo-container img {
+            max-width: auto;
+            height: 100px;
+            padding: 10px;
+            object-fit: contain;
+        }
     </style>
 </head>
 
@@ -31,74 +44,67 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="img/ppllc.png" alt="Bootstrap" height="63">
-                  </a>
+                    <img src="img/ppllc.png" alt="Bootstrap" height="69">
+                </a>
 
-                <div class="justify-content-end" id="navbarNavAltMarkup">
+                <div class="justify-content-end">
                     <div class="navbar-nav">
-                        <span class="navbar-text"><i class="bi bi-telephone"></i> +1 (801) 510-6872<br><i class="bi bi-envelope"></i> nick@picnicpeaks.com  </span>
+                        <span class="navbar-text"><i class="bi bi-telephone"></i> <a href="tel:+18015106872">+1 (801)
+                                510-6872</a><br><i class="bi bi-envelope"></i> <a
+                                href="mailto:nick@picnicpeaks.com">nick@picnicpeaks.com</a></span>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
 
-    
+    <div class="bg-body-tertiary hmb-bg"></div>
 
-    <!-- <div class="container">
-        <h1 class="display-5">Picnic Peaks</h1>
-        <div class="text-center mt-3 border-bottom pb-3">
-            <a href="tel:8015106872"><small>+1 (801) 510-6872</small></a> &bullet;
-            <a href="mailto:nick@picnicpeaks.com"><small>nick@picnicpeaks.com</small></a> &bullet;
-            <a href="https://www.linkedin.com/in/picnicpeaks/" target="_blank"><small>LinkedIn</small></a>
-        </div>
-    </div> -->
-
-
-    <div class="bg-body-tertiary hmb-bg">
-        <!-- <div class="p-5 container-fluid text-center">
-            <div class="row justify-content-center">
-                <div class="col col-md-9 text-center hmb-navy py-5 rounded-2 px-4">
-                    <h1 class="display-5 text-center text-white pb-3 pb-5 border-bottom">ERP and beyond.</h1>
-
-                    <h1 class="display-6 text-center text-white pt-4">NetSuite, Integrations, Data Migration, Scripts and Software, Leadership</h1>
-                </div>
-            </div>
-        </div> -->
-    </div>
-
-    <div class="testimonial">
+    <div class="testimonial py-3">
         <div class="container">
-            <div class="row text-center justify-content-center pt-5">
-                <div class="col-sm-6 col-xl-2 mb-5">
-                    <a href="#" target="_blank">
-                        <img src="img/netsuite_logo.png" height="50">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-xl-2 mb-5 mt-5 mt-sm-0">
-                    <a href="#" target="_blank">
-                        <img src="img/mulesoft_logo.png" height="50">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-xl-2 mb-5 mt-5 mt-xl-0">
-                    <a href="#" target="_blank">
-                        <img src="img/salesforce_logo.png" height="50">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-xl-2 mb-5 mt-5 mt-xl-0">
-                    <a href="#" target="_blank">
-                        <img src="img/aws_logo.png" height="50">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-xl-2 mb-5 mt-5 mt-xl-0">
-                    <a href="#" target="_blank">
-                        <img src="img/git_logo.png" height="50">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-xl-2 mb-5 mt-5 mt-xl-0">
-                    <a href="#" target="_blank">
-                        <img src="img/shopify_logo_black.png" height="50">
-                    </a>
+            <div class="row text-center">
+                <div class="col-12 logo-container">
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/python.svg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/MuleSoft-From-Salesforce-Logo-RGB.png" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/salesforce_logo.png" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/netsuite_logo.png" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/aws_logo.png" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/git_logo.png" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <img src="img/shopify_logo_black.png" class="img-fluid">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -109,27 +115,34 @@
             <h1 class="text-center mb-5 display-5">Services</h1>
             <div class="col-sm-4 mb-3 mb-sm-0 text-center">
                 <h5>Custom Script Development</h5>
-                <p>Enhance your NetSuite capabilities with tailored scripts that automate processes and meet specific business requirements using SuiteScript.</p>
+                <p>Enhance your NetSuite capabilities with tailored scripts that automate processes and meet specific
+                    business requirements using SuiteScript.</p>
             </div>
             <div class="col-sm-4 mb-3 mb-sm-0 text-center">
                 <h5>System Integration</h5>
-                <p>Seamlessly connect NetSuite with your CRM, e-commerce platforms, and other third-party applications using NetSuite API and integration platforms like MuleSoft to ensure smooth data flow and integration.</p>
+                <p>Seamlessly connect NetSuite with your CRM, e-commerce platforms, and other third-party applications
+                    using NetSuite API and integration platforms like MuleSoft to ensure smooth data flow and
+                    integration.</p>
             </div>
             <div class="col-sm-4 mb-3 mb-sm-0 text-center">
                 <h5>Data Migration and Management</h5>
-                <p>Safely transfer your data from legacy systems into NetSuite, ensuring accuracy, integrity, and consistency throughout the process.</p>
+                <p>Safely transfer your data from legacy systems into NetSuite, ensuring accuracy, integrity, and
+                    consistency throughout the process.</p>
             </div>
             <div class="col-sm-4 mb-3 mt-sm-4 mb-sm-0 text-center">
                 <h5>Workflow Automation</h5>
-                <p>Streamline your operations with automated workflows designed using SuiteFlow, reducing manual tasks and boosting efficiency.</p>
+                <p>Streamline your operations with automated workflows designed using SuiteFlow, reducing manual tasks
+                    and boosting efficiency.</p>
             </div>
             <div class="col-sm-4 mb-3 mt-sm-4 mb-sm-0 text-center">
                 <h5>System Configuration and Optimization</h5>
-                <p>Align NetSuite settings with your business needs and optimize system performance through regular assessments and tuning.</p>
+                <p>Align NetSuite settings with your business needs and optimize system performance through regular
+                    assessments and tuning.</p>
             </div>
             <div class="col-sm-4 mb-3 mt-sm-4 mb-sm-0 text-center">
                 <h5>Technical Support and Troubleshooting</h5>
-                <p>Receive expert technical support to resolve issues, debug errors, and ensure the smooth operation of your NetSuite system.</p>
+                <p>Receive expert technical support to resolve issues, debug errors, and ensure the smooth operation of
+                    your NetSuite system.</p>
             </div>
         </div>
 
