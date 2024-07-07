@@ -24,16 +24,29 @@
             background-color: lightyellow;
         }
 
-        .logo-container {
+        .system-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
 
-        .logo-container img {
+        .system-container img {
             max-width: auto;
             height: 69px;
             padding: 10px;
+            object-fit: contain;
+        }
+
+        .client-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .client-container img {
+            max-width: auto;
+            height: 50px;
+            /* padding: 10px; */
             object-fit: contain;
         }
     </style>
@@ -63,7 +76,7 @@
     <div class="testimonial py-md-3">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12 logo-container">
+                <div class="col-12 system-container">
                     <div class="col">
                         <img src="img/python.svg" class="img-fluid">
                     </div>
@@ -98,7 +111,7 @@
 
     <div class="container">
         <div class="row mb-5 mt-5">
-            <h1 class="text-center mb-5 display-5">Services</h1>
+            <h1 class="text-center mb-5 display-5">NetSuite Services</h1>
             <div class="col-sm-4 mb-3 mb-sm-0 text-center">
                 <h5>Custom Script Development</h5>
                 <p>Enhance your NetSuite capabilities with tailored scripts that automate processes and meet specific
@@ -186,56 +199,54 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="pt-5">
-            <h1 class="display-6 mb-4 text-center">Valued Clients</h1>
-            <div class="row text-center justify-content-center pt-5 logo-container">
-                    <div class="col-3 mb-5 mt-5  mt-sm-0">
-                        <a href="https://www.aspensnowmass.com/" target="_blank">
-                            <img src="img/aspen.png" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5 mt-sm-0">
-                        <a href="https://www.bioliteenergy.com/" target="_blank">
-                            <img src="img/biolite.svg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5 mt-sm-0">
-                        <a href="https://www.expresstek.us/" target="_blank">
-                            <img src="img/eXpressTek.jpg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5 mt-sm-0">
-                        <a href="https://maisoncorbeaux.com/" target="_blank">
-                            <img src="img/maison-corbeaux.jpeg">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5">
-                        <a href="https://netsuiteur.com/" target="_blank">
-                            <img src="img/NetSuiteur.png" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5">
-                        <a href="https://www.systemsaccountants.com/" target="_blank">
-                            <img src="img/SystemsAccountants.svg">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5">
-                        <a href="https://www.ulabsystems.com/" target="_blank">
-                            <img src="img/ulab_systems.svg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-3 mb-5 mt-5">
-                        <a href="https://wingtip.club/" target="_blank">
-                            <img src="img/wingtip.png" class="img-fluid">
-                        </a>
-                    </div>
+    <div class="container mt-5">
+        <h1 class="display-6 mb-4 text-center">Valued Clients</h1>
+        <div class="row text-center justify-content-center client-container">
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://www.aspensnowmass.com/" target="_blank">
+                    <img src="img/aspen.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://www.bioliteenergy.com/" target="_blank">
+                    <img src="img/biolite.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://www.expresstek.us/" target="_blank">
+                    <img src="img/eXpressTek.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://maisoncorbeaux.com/" target="_blank">
+                    <img src="img/maison-corbeaux.jpeg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://netsuiteur.com/" target="_blank">
+                    <img src="img/NetSuiteur.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://www.systemsaccountants.com/" target="_blank">
+                    <img src="img/SystemsAccountants.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://www.ulabsystems.com/" target="_blank">
+                    <img src="img/ulab_systems.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-3 my-3 my-md-4 my-lg-5">
+                <a href="https://wingtip.club/" target="_blank">
+                    <img src="img/amador_logo.png" class="img-fluid">
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <footer class="text-center my-5 pt-3 border-top">
+    <div class="container my-5">
+        <footer class="text-center pt-3 border-top">
             <small>Picnic Peaks LLC © <span id="copyright-year"></span>. All rights reserved.</small>
         </footer>
     </div>
